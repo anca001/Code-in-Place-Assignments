@@ -1,0 +1,12 @@
+def main():
+    while front_is_clear():
+        turn_left()
+        while front_is_clear():
+            if no_beepers_present():
+                put_beeper()
+                move()
+            else:
+                move()
+        turn_around()
+        move_to_wall()
+        next_column()
